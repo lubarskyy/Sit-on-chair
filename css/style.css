@@ -28,6 +28,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Raleway', sans-serif;
+  /*border: 1px red solid;*/
 }
 
 .main-width {
@@ -35,6 +36,8 @@
   margin: 0 auto;
   position: relative;
 }
+
+/* Header section */
 
 header {
   height: 40px;
@@ -52,7 +55,7 @@ div.logo p {
   text-transform: uppercase;
 }
 
-div.logo span {
+span { /*prawdopodobnie do zmiany*/
   color: #27c7ab;
 }
 
@@ -72,4 +75,62 @@ ul.navigation li {
 li a {
   text-decoration: none;
   color: white;
+}
+
+/* Product showcase section */
+
+section.showcase {
+  height: 500px;
+  background: linear-gradient(#FFF, #ceced6); /* kolory do zdefiniowania */
+  box-sizing: border-box;
+}
+
+div.product-slider-left {
+  float: left;
+  font-size: 70px;
+  color: #27c7ab;
+  padding-top: 190px;
+}
+
+div.product-image {
+  width: 45%;
+  float: left;
+  padding-top: 70px;
+}
+
+div.product-title {
+  width: 45%;
+  /*float: right;*/
+  text-align: center;
+  padding-top: 120px;
+  float: left;
+}
+
+div.product-title h1 {
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+article.product-info p {
+  font-size: 16px;
+  line-height: 25px;
+  padding: 35px 0;
+}
+
+div.product-title button {
+  background-color: #27c7ab;
+  color: white;
+  width: 265px;
+  height: 50px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 25px;
+  border: none;
+}
+
+div.product-slider-right {
+  float: right;
+  font-size: 70px;
+  color: #27c7ab;
+  padding-top: 190px;
 }
