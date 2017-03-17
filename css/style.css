@@ -37,7 +37,7 @@
   position: relative;
 }
 
-/* Header section */
+/* Header and navigation section */
 
 header {
   height: 40px;
@@ -77,11 +77,11 @@ li a {
   color: white;
 }
 
-/* Product showcase section */
+/* Product highlight section */
 
-section.showcase {
+section.highlight {
   height: 500px;
-  background: linear-gradient(#FFF, #ceced6); /* kolory do zdefiniowania */
+  background: linear-gradient(#FFF, #ceced6);
   box-sizing: border-box;
 }
 
@@ -133,4 +133,30 @@ div.product-slider-right {
   font-size: 70px;
   color: #27c7ab;
   padding-top: 190px;
+}
+
+/* Product showcase section */
+
+section.product-showcase {
+  height: 350px;
+  background-color: #FFF;
+  box-sizing: border-box;
+}
+
+div.product-showcase-image {
+  width: 33%;
+  float: left;
+  padding-top: 25px;
+}
+
+div.product-showcase-info {
+  width: 33%;
+  float: left;
+  padding-top: 25px;
+}
+
+.lel {
+  background-image: url(../images/box1_img.jpg);
+  background-size: cover;
+  background-position: center;
 }
