@@ -23,7 +23,12 @@
 	font-weight: normal;
 	font-style: normal;
 }
-
+/* TO DO LIST
+- zamiana czcionek na wartosci em lub rem
+- zmniejszenie ilosci kodu css
+- ponowne opracowanie nazewnictwa class
+- zastosowanie wiekszej ilosci znacznikow HTML5
+*/
 * {
   margin: 0;
   padding: 0;
@@ -93,7 +98,7 @@ div.product-slider-left {
   margin-top: 190px;
 }
 
-div.product-image {
+figure.product-image {
   width: 45%;
   float: left;
   margin-top: 70px;
@@ -143,7 +148,7 @@ section.product-showcase {
   box-sizing: border-box;
 }
 
-div.product-showcase-image {
+figure.product-showcase-image {
   width: 30%;
   height: 225px;
   float: left;
@@ -203,10 +208,9 @@ article.product-showcase-text {
   padding: 30px 20px;
 }
 
-article.product-showcase-text header {
+article.product-showcase-text header, h2 {
   color: black;
-  font-weight: bold;
-  padding-bottom: 13px;
+  font-size: 1em;
 }
 
 .product-showcase-text header::after {
@@ -215,6 +219,7 @@ article.product-showcase-text header {
   height: 7px;
   width: 138px;
   background-color: #27c7ab;
+  margin-bottom: 13px;
 }
 
 article.product-showcase-text p {
@@ -228,5 +233,114 @@ article.product-showcase-text p {
 
 section.product-price {
   height: 725px;
+  background-color: #f1f1f1;
+}
+
+header.pricing {
+  padding-top: 40px;
+  padding-bottom: 70px;
+}
+
+header.pricing h2 {
+  color: black;
+  text-transform: uppercase;
+  line-height: 30px;
+  font-size: 1em;
+  font-weight: normal;
+}
+
+header.pricing h2::after {
+  content: "";
+  display: block;
+  height: 7px;
+  width: 320px;
+  background-color: #27c7ab;
+}
+
+div.pricing-option {
+  width: 330px;
+  height: 500px;
   background-color: #f9f9f9;
+  border: 1px solid #d5d5d5;
+  text-align: center;
+  position: relative;
+}
+
+div.outer-circle {
+  width: 57px;
+  height: 57px;
+  border-radius: 50%;
+  border: 1px solid #d5d5d5;
+  background-color: #FFF;
+  position: absolute;
+  left: 135.5px;
+  top: -30px;
+}
+
+div.inner-circle {
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  background-color: #c2c2c2;
+  margin: 14px 14px;
+}
+
+div.pricing-option span {
+  text-transform: uppercase;
+  color: #27c7ab;
+  display: block;
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+div.price-tag {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-color: #FFF;
+  margin: 35px auto;
+}
+
+div.price-tag p {
+  font-size: 40px;
+  font-weight: bold;
+  color: #c2c2c2;
+  padding-top: 20px;
+}
+
+div.price-tag sup {
+  font-size: 15px;
+}
+
+div.price-tag span {
+  font-weight: bold;
+  color: #c2c2c2;
+  margin-top: 10px;
+}
+
+div.options p {
+  height: 45px;
+  color: #a3a3a3;
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+div.options p:nth-child(2n+1) {
+  background-color: #e4e4e4;
+}
+
+div.options p:nth-child(2n) {
+  background-color: #f1f1f1;
+}
+
+div.pricing-option button {
+  width: 125px;
+  height: 35px;
+  background-color: #27c7ab;
+  color: #FFF;
+  font-size: 20px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10px;
+  margin-top: 100px;
 }
