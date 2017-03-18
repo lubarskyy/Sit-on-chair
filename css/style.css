@@ -29,6 +29,7 @@
   padding: 0;
   font-family: 'Raleway', sans-serif;
   /*border: 1px red solid;*/
+  box-sizing: border-box;
 }
 
 .main-width {
@@ -39,7 +40,7 @@
 
 /* Header and navigation section */
 
-header {
+header.start {
   height: 40px;
   background-color: #000;
   color: white;
@@ -89,20 +90,19 @@ div.product-slider-left {
   float: left;
   font-size: 70px;
   color: #27c7ab;
-  padding-top: 190px;
+  margin-top: 190px;
 }
 
 div.product-image {
   width: 45%;
   float: left;
-  padding-top: 70px;
+  margin-top: 70px;
 }
 
 div.product-title {
-  width: 45%;
-  /*float: right;*/
+  width: 40%;
   text-align: center;
-  padding-top: 120px;
+  margin-top: 120px;
   float: left;
 }
 
@@ -132,7 +132,7 @@ div.product-slider-right {
   float: right;
   font-size: 70px;
   color: #27c7ab;
-  padding-top: 190px;
+  margin-top: 190px;
 }
 
 /* Product showcase section */
@@ -144,19 +144,89 @@ section.product-showcase {
 }
 
 div.product-showcase-image {
-  width: 33%;
+  width: 30%;
+  height: 225px;
   float: left;
-  padding-top: 25px;
+  margin-top: 30px;
 }
 
 div.product-showcase-info {
-  width: 33%;
+  width: 37%;
   float: left;
-  padding-top: 25px;
+  margin-top: 30px;
 }
 
-.lel {
+.first-image {
   background-image: url(../images/box1_img.jpg);
   background-size: cover;
   background-position: center;
+}
+
+.second-image {
+  background-image: url(../images/box2_img.jpg);
+  background-size: cover;
+  background-position: center;
+  margin: 0 15px;
+}
+
+.product-showcase-name {
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.4);
+  margin-top: 150px;
+}
+
+.product-showcase-name p {
+  color: black;
+  font-weight: bold;
+  padding: 13px 10px;
+}
+
+.product-showcase-name span {
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.product-showcase-name span::after {
+  content: "";
+  display: block;
+  height: 7px;
+  width: 138px;
+  background-color: #27c7ab;
+}
+
+div.product-showcase-info {
+  border: 1px solid #ceced6;
+}
+
+article.product-showcase-text {
+  padding: 30px 20px;
+}
+
+article.product-showcase-text header {
+  color: black;
+  font-weight: bold;
+  padding-bottom: 13px;
+}
+
+.product-showcase-text header::after {
+  content: "";
+  display: block;
+  height: 7px;
+  width: 138px;
+  background-color: #27c7ab;
+}
+
+article.product-showcase-text p {
+  font-size: 15px;
+  line-height: 20px;
+  color: #ceced6;
+  padding-bottom: 20px;
+}
+
+/* Product pricing section */
+
+section.product-price {
+  height: 725px;
+  background-color: #f9f9f9;
 }
