@@ -264,6 +264,12 @@ div.pricing-option {
   border: 1px solid #d5d5d5;
   text-align: center;
   position: relative;
+  float: left;
+  transition: 0.2s transform linear;
+}
+
+.divider {
+  margin: 0 34px;
 }
 
 div.outer-circle {
@@ -297,6 +303,7 @@ div.price-tag {
   width: 130px;
   height: 130px;
   border-radius: 50%;
+  border: 1px solid #d5d5d5;
   background-color: #FFF;
   margin: 35px auto;
 }
@@ -338,9 +345,50 @@ div.pricing-option button {
   height: 35px;
   background-color: #27c7ab;
   color: #FFF;
-  font-size: 20px;
+  font-size: 16px;
   text-transform: uppercase;
   border: none;
   border-radius: 10px;
-  margin-top: 100px;
+  position: absolute;
+  left: 101.5px;
+  bottom: 14px;
 }
+
+/* START - Price tag hover options */
+
+div.pricing-option:hover {
+  background-color: #27c7ab;
+  transform: scale(1.1);
+}
+
+div.pricing-option:hover .inner-circle {
+  background-color: #FFF;
+}
+
+div.pricing-option:hover .outer-circle {
+  background-color: #27c7ab;
+  border: none;
+}
+
+div.pricing-option:hover span {
+  color: #FFF;
+}
+
+div.pricing-option:hover .price-tag p {
+  color: #27c7ab;
+}
+
+div.pricing-option:hover .price-tag span {
+  color: #27c7ab;
+}
+
+div.pricing-option:hover button {
+  color: #27c7ab;
+  background-color: #FFF;
+}
+
+div.pricing-option:hover .options p:nth-child(2n+1) {
+  background-color: #FFF;
+}
+
+/* END - Price tag hover options */
