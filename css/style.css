@@ -153,12 +153,20 @@ figure.product-showcase-image {
   height: 225px;
   float: left;
   margin-top: 30px;
+  opacity: 0.7;
+  transition: 0.2s transform linear;
+}
+
+figure.product-showcase-image:hover {
+  transform: translateY(-8px);
+  opacity: 1;
 }
 
 div.product-showcase-info {
   width: 37%;
   float: left;
   margin-top: 30px;
+  border: 1px solid #ceced6;
 }
 
 .first-image {
@@ -198,10 +206,6 @@ div.product-showcase-info {
   height: 7px;
   width: 138px;
   background-color: #27c7ab;
-}
-
-div.product-showcase-info {
-  border: 1px solid #ceced6;
 }
 
 article.product-showcase-text {
