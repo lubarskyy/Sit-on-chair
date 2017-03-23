@@ -1,3 +1,3 @@
 # Website url:
 
-https://github.com/lubarskyy/Sit-on-chair
+https://lubarskyy.github.io/Sit-on-chair/
