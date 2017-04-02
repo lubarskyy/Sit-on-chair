@@ -33,7 +33,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Raleway', sans-serif;
-  /*border: 1px red solid;*/
+  /*border: 1px dotted red;*/
   box-sizing: border-box;
 }
 
@@ -123,7 +123,7 @@ article.product-info p {
 }
 
 div.product-title button {
-  background-color: #27c7ab;
+  background-color: #24baa0;
   color: white;
   width: 265px;
   height: 50px;
@@ -245,7 +245,7 @@ header.pricing {
   padding-bottom: 70px;
 }
 
-header.pricing h2 {
+header.pricing h3 {
   color: black;
   text-transform: uppercase;
   line-height: 30px;
@@ -253,7 +253,7 @@ header.pricing h2 {
   font-weight: normal;
 }
 
-header.pricing h2::after {
+header.pricing h3::after {
   content: "";
   display: block;
   height: 7px;
@@ -396,3 +396,108 @@ div.pricing-option:hover .options p:nth-child(2n+1) {
 }
 
 /* END - Price tag hover options */
+
+/* Contact section */
+
+section.contact-form {
+	height: 545px;
+	background-color: #fff;
+}
+
+header.contact {
+  padding-top: 40px;
+  padding-bottom: 50px;
+	width: 60%;
+	float: left;
+}
+
+header.contact h3 {
+  color: black;
+  text-transform: uppercase;
+  line-height: 30px;
+  font-size: 1em;
+  font-weight: normal;
+}
+
+header.contact h3::after {
+  content: "";
+  display: block;
+  height: 7px;
+  width: 320px;
+  background-color: #27c7ab;
+}
+
+form .info, textarea {
+	width: 635px;
+	height: 65px;
+	display: block;
+	float: left;
+	border: 1px solid #27c7ab;
+	margin-bottom: 30px;
+	padding-left: 15px;
+	font-size: 33px;
+}
+
+form textarea {
+	height: 190px;
+	padding-top: 15px;
+	resize: none;
+}
+
+input::placeholder, textarea::placeholder {
+	color: #cacaca;
+}
+
+form img, .send {
+	display: block;
+}
+
+form img {
+	padding-top: 100px;
+	margin: 0 auto;
+}
+
+.agree-info {
+	color: #aeaeae;
+	font-size: 20px;
+	cursor: pointer;
+	margin-top: 40px;
+	margin-left: 10px;
+	display: inline-block;
+	width: 28%;
+}
+
+input[type="checkbox"] {
+	display: none;
+}
+
+label::before {
+	content: "";
+	float: left;
+	height: 50px;
+	width: 50px;
+	border: 1px solid #27c7ab;
+	margin-left: 60px;
+	margin-top: 30px;
+	background-position: center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label::before{
+	background-image: url(../images/form_ok.jpg);
+}
+
+form button {
+	width: 340px;
+	height: 70px;
+	font-size: 34px;
+	color: white;
+	text-transform: uppercase;
+	background-color: #24baa0;
+	border-radius: 10px;
+	border: none;
+	margin-top: 40px;
+	margin-left: 60px;
+	display: inline-block;
+}
