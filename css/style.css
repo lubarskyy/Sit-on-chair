@@ -41,6 +41,7 @@
   width: 1060px;
   margin: 0 auto;
   position: relative;
+	height: 100%;
 }
 
 /* Header and navigation section */
@@ -446,6 +447,7 @@ form textarea {
 
 input::placeholder, textarea::placeholder {
 	color: #cacaca;
+	font-weight: 100;
 }
 
 form img, .send {
@@ -488,7 +490,7 @@ input[type="checkbox"]:checked + label::before{
 	background-image: url(../images/form_ok.jpg);
 }
 
-form button {
+form .send {
 	width: 340px;
 	height: 70px;
 	font-size: 34px;
@@ -499,5 +501,48 @@ form button {
 	border: none;
 	margin-top: 40px;
 	margin-left: 60px;
+	display: inline-block;
+}
+
+/* Footer section */
+
+footer {
+	height: 110px;
+	background-color: #fff;
+}
+
+.aligner {
+	padding-top: 40px;
+}
+
+footer .rights {
+	font-size: 16px;
+	color: #9b9b9b;
+	display: inline-block;
+	margin-top: 10px;
+}
+
+div.social {
+	float: right;
+	width: 35%;
+}
+
+p.social-logo, .social-logo span {
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #9b9b9b;
+}
+
+.social-logo span {
+	font-weight: bold;
+}
+
+p.social-logo {
+	float: right;
+	padding-top: 10px;
+}
+
+.social-icon {
+	float: left;
 	display: inline-block;
 }
