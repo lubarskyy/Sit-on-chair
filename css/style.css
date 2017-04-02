@@ -23,12 +23,27 @@
 	font-weight: normal;
 	font-style: normal;
 }
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('../fonts/Raleway-Light.eot');
+	src: local('Raleway Light'), local('Raleway-Light'),
+		url('../fonts/Raleway-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Raleway-Light.woff2') format('woff2'),
+		url('../fonts/Raleway-Light.woff') format('woff'),
+		url('../fonts/Raleway-Light.ttf') format('truetype'),
+		url('../fonts/Raleway-Light.svg#Raleway-Light') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
 /* TO DO LIST
-- zamiana czcionek na wartosci em lub rem
+- zamiana czcionek na wartosci rem
 - zmniejszenie ilosci kodu css
 - ponowne opracowanie nazewnictwa class
 - zastosowanie wiekszej ilosci znacznikow HTML5
 */
+
 * {
   margin: 0;
   padding: 0;
@@ -94,19 +109,26 @@ section.highlight {
 
 div.product-slider-left {
   float: left;
-  font-size: 70px;
+	font-size: 78px;
+	font-weight: 300;
   color: #27c7ab;
   margin-top: 190px;
 }
 
 figure.product-image {
-  width: 45%;
+  width: 40%;
   float: left;
-  margin-top: 70px;
+  margin-top: 40px;
+}
+
+figure.product-image img {
+	height: 450px;
+	position: relative;
+	left: -100px;
 }
 
 div.product-title {
-  width: 40%;
+  width: 45%;
   text-align: center;
   margin-top: 120px;
   float: left;
@@ -114,11 +136,16 @@ div.product-title {
 
 div.product-title h1 {
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 40px;
+	font-weight: normal;
+}
+
+div.product-title span {
+	font-weight: bold;
 }
 
 article.product-info p {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 25px;
   padding: 35px 0;
 }
@@ -130,13 +157,15 @@ div.product-title button {
   height: 50px;
   border-radius: 5px;
   text-transform: uppercase;
-  font-size: 25px;
+  font-size: 24px;
+	font-weight: 300;
   border: none;
 }
 
 div.product-slider-right {
   float: right;
-  font-size: 70px;
+  font-size: 78px;
+	font-weight: 300;
   color: #27c7ab;
   margin-top: 190px;
 }
@@ -228,10 +257,11 @@ article.product-showcase-text header, h2 {
 }
 
 article.product-showcase-text p {
-  font-size: 15px;
-  line-height: 20px;
-  color: #ceced6;
+  font-size: 14px;
+  line-height: 21px;
+  color: #565656;
   padding-bottom: 20px;
+	padding-right: 5px;
 }
 
 /* Product pricing section */
@@ -333,7 +363,8 @@ div.price-tag span {
 div.options p {
   height: 45px;
   color: #a3a3a3;
-  font-size: 20px;
+  font-size: 24px;
+	font-weight: 300;
   padding: 10px 0;
 }
 
@@ -351,6 +382,7 @@ div.pricing-option button {
   background-color: #27c7ab;
   color: #FFF;
   font-size: 16px;
+	font-weight: 300;
   text-transform: uppercase;
   border: none;
   border-radius: 10px;
@@ -447,7 +479,7 @@ form textarea {
 
 input::placeholder, textarea::placeholder {
 	color: #cacaca;
-	font-weight: 100;
+	font-weight: 300;
 }
 
 form img, .send {
@@ -462,6 +494,7 @@ form img {
 .agree-info {
 	color: #aeaeae;
 	font-size: 20px;
+	font-weight: 300;
 	cursor: pointer;
 	margin-top: 40px;
 	margin-left: 10px;
@@ -540,9 +573,4 @@ p.social-logo, .social-logo span {
 p.social-logo {
 	float: right;
 	padding-top: 10px;
-}
-
-.social-icon {
-	float: left;
-	display: inline-block;
 }
