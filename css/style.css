@@ -86,8 +86,9 @@ ul.navigation > li {
   list-style-type: none;
   display: inline-block;
 	position: relative;
+	z-index: 1;
   margin-left: 50px;
-	padding-bottom: 30px;
+	padding-bottom: 20px;
 }
 
 li a {
@@ -880,7 +881,6 @@ p.social-logo {
 	position: absolute;
 	left: -15px;
 	top: 40px;
-	z-index: 1;
 	width: 120px;
 	background-color: black;
 	text-transform: capitalize;
@@ -892,7 +892,6 @@ p.social-logo {
 	position: absolute;
 	left: 45px;
 	top: -10px;
-	z-index: 1;
 	width: 0;
 	height: 0;
 	border-left: 10px solid transparent;
