@@ -52,9 +52,15 @@
         </div>
         <figure class="product-image">
           <ul class="slider">
-            <li><img src="images/black_chair.png" alt="Black chair"></li>
-            <li><img src="images/red_chair.png" alt="Red chair"></li>
-            <li><img src="images/orange_chair.png" alt="Orange chair"></li>
+            <li>
+              <img src="images/black_chair.png" alt="Black chair">
+            </li>
+            <li>
+              <img src="images/red_chair.png" alt="Red chair">
+            </li>
+            <li>
+              <img src="images/orange_chair.png" alt="Orange chair">
+            </li>
           </ul>
         </figure>
         <div class="product-title">
@@ -156,6 +162,83 @@
         </div>
       </div>
     </section>
+    <!--  -->
+
+    <section class="application">
+      <div class="main-width">
+        <section class="choice_part inline">
+          <header>
+            <h3>SKOMPONUJ SWOJE KRZESŁO</h3>
+            <span class="green_bell"></span>
+          </header>
+
+          <div class="form">
+            <div class="drop_down_list">
+              <span class="list_label">Wybierz rodzaj</span>
+              <span class="list_arrow"></span>
+              <ul class="list_panel">
+                <li data-price="190">Chair Clair</li>
+                <li data-price="210">Chair Margarita</li>
+                <li data-price="250">Chair Selena</li>
+              </ul>
+            </div>
+            <div class="drop_down_list">
+              <span class="list_label">Wybierz kolor</span>
+              <span class="list_arrow"></span>
+              <ul class="list_panel">
+                <li data-price="10">Czerwony</li>
+                <li data-price="20">Czarny</li>
+                <li data-price="30">Pomarańczowy</li>
+              </ul>
+            </div>
+            <div class="drop_down_list">
+              <span class="list_label">Wybierz materiał</span>
+              <span class="list_arrow"></span>
+              <ul class="list_panel">
+                <li data-price="100">Tkanina</li>
+                <li data-price="200">Skóra</li>
+              </ul>
+            </div>
+            <div class="checkbox check-box">
+              <input type="checkbox" id="transport" data-transport-price="80">
+              <label for="transport">Transport</label>
+            </div>
+            <!-- <div class="checkbox"></div>
+            <span class="list_label inline_text">Transport</span> -->
+          </div>
+        </section>
+
+        <section class="image_part inline">
+          <img src="images/red_chair.png">
+        </section>
+
+        <section class="summary_part inline">
+          <header class="align_right">
+            <h3>PODSUMOWANIE</h3>
+            <span class="green_bell"></span>
+          </header>
+
+          <div class="summary_panel">
+            <div class="panel_left">
+              <h4 class="title">Twój fotel</h4>
+              <span class="color"></span>
+              <span class="pattern"></span>
+              <span class="transport"></span>
+            </div>
+            <div class="panel_right">
+              <h4 class="title value"></h4>
+              <span class="color value"></span>
+              <span class="pattern value"></span>
+              <span class="transport value"></span>
+            </div>
+            <div class="sum_label">SUMA</div>
+            <div class="sum"><strong>0 zł</strong></div>
+          </div>
+          <a href="#" class="green_button">Zamawiam</a>
+        </section>
+      </div>
+    </section>
+
     <!-- Contact section -->
     <section class="contact-form">
       <div class="main-width">
@@ -168,7 +251,7 @@
           <textarea name="name" placeholder="Wiadomość"></textarea>
           <img src="images/red_chair.png" alt="Red chair">
           <input type="checkbox" name="" value="" id="agree">
-          <label for="agree" class="">
+          <label for="agree" class="agree-box">
             <span class="agree-info">Zgadzam się na przetwarzanie danych osobowych</span>
           </label>
           <button type="button" name="button" class="send">wyślij</button>
