@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function(){
     lis[counter].classList.add('visible');
   });
 
-  /* */
+  /* Application section */
   var listArrow = Array.from(document.querySelectorAll('.list_arrow'));
   var listPanelToShow = Array.from(document.querySelectorAll('.list_panel'));
   var listElement = Array.from(document.querySelectorAll('.list_panel li'));
@@ -118,6 +118,7 @@ document.addEventListener("DOMContentLoaded", function(){
     el.addEventListener('click', function(event){
       title.innerText = el.innerText;
       listLabel[0].innerText = el.innerText;
+      listLabel[0].style.color = "#5b5a5a"
       titleValue.innerText = el.dataset.price;
       result1 = parseFloat(el.dataset.price);
       sumValue.innerText = result1 + result2 + result3 + result4 + " zł";
@@ -128,6 +129,7 @@ document.addEventListener("DOMContentLoaded", function(){
     el.addEventListener('click', function(event){
       color.innerText = el.innerText
       listLabel[1].innerText = el.innerText;
+      listLabel[1].style.color = "#5b5a5a"
       colorValue.innerText = el.dataset.price;
       if(color.innerText == "Czarny") {
         image.setAttribute('src', 'images/black_chair.png')
@@ -145,6 +147,7 @@ document.addEventListener("DOMContentLoaded", function(){
     el.addEventListener('click', function(event){
       pattern.innerText = el.innerText
       listLabel[2].innerText = el.innerText;
+      listLabel[2].style.color = "#5b5a5a"
       patternValue.innerText = el.dataset.price;
       result3 = parseFloat(el.dataset.price);
       sumValue.innerText = result1 + result2 + result3 + result4 + " zł";
@@ -162,6 +165,5 @@ document.addEventListener("DOMContentLoaded", function(){
     }
     sumValue.innerText = result1 + result2 + result3 + result4 + " zł";
   });
-
 
 });
